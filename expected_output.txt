@@ -1,0 +1,89 @@
+tho#mas@thomas.com <- invalid mailbox, must be alphanumeric (with optional ._- separators)
+thomas@tho#mas.com <- invalid domain, must be alphanumeric (with optional . separators)
+thomas@tho_mas.co.nz <- invalid domain, must be alphanumeric (with optional . separators)
+thomas@tho__mas.co.nz <- invalid domain, must be alphanumeric (with optional . separators)
+thomas@tho..mas.co.nz <- invalid email, consecutive .
+thomas@thomas.ac.nz <- invalid extension
+thom..as@thomas.co.nz <- invalid email, consecutive .
+thomas@tho..mas.co.nz <- invalid email, consecutive .
+thom__as@thomas.com <- invalid email, consecutive _
+thomas <- missing @ symbol
+thomas@[] <- invalid domain, missing ip
+thomas@[12343.1234.1234] <- invalid domain, invalid ip
+thomas@[domain] <- invalid ip, contains invalid characters
+thomas@@mail.com <- invalid email, multiple @ symbols
+thoma_s@mail.com
+thomas@mail..com <- invalid domain, . is not acting as a separator
+.thomasroff@mail.com <- invalid mailbox, . is not acting as a separator
+thomas.@mail.com <- invalid mailbox, . is not acting as a separator
+thomas@.mail.com <- invalid domain, . is not acting as a separator
+thomas_-.@mail.com <- invalid mailbox, - is not acting as a separator
+45@42.com
+thomas@coolmail.com
+thomas@roff42.co>nz <- invalid extension
+thomas@roff.co.nz
+thomas@[139.80.239.132]
+thomas@[255.80.239.132]
+thomas@[256.80.239.132] <- invalid domain, invalid ip
+thomas@[255.80.239.132 <- invalid domain, missing ] bracket
+thomas@255.80.239.132] <- invalid domain, missing [ bracket
+thomas@255.80.239.132 <- invalid extension
+thomas@[1..11...11] <- invalid domain, invalid ip
+thomas@[.] <- invalid domain, invalid ip
+thomas@[1] <- invalid domain, invalid ip
+thomas@[1 <- invalid domain, missing ] bracket
+thomas@[roff <- invalid domain, missing ] bracket
+thomas@[roff..] <- invalid ip, contains invalid characters
+thomas@test.co_dot_nz <- invalid extension
+thomas@ <- missing domain
+thomas@co.nz <- missing domain
+to_dot_.meme@meme.com <- invalid email, consecutive .
+thomas_dot__dot_roff@mail.com <- invalid email, consecutive .
+_dot__at_test_dot_co.nz <- invalid mailbox, . is not acting as a separator
+_at_test_dot_co.nz <- missing mailbox
+tester_at__dot_co.nz <- missing domain
+ip@[1.11.wefd] <- invalid ip, contains invalid characters
+ip@[] <- invalid domain, missing ip
+test.com@ <- @ symbol is not between mailbox and domain
+test[]@ <- @ symbol is not between mailbox and domain
+-thomas@thomas.com <- invalid mailbox, - is not acting as a separator
+--thomas@thomas.com <- invalid mailbox, - is not acting as a separator
+---thomas@thomas.com <- invalid mailbox, - is not acting as a separator
+-._thomas@thomas.com <- invalid mailbox, - is not acting as a separator
+thomas--@thomas.com <- invalid email, consecutive -
+th---mas@thomas.com <- invalid email, consecutive -
+tho__mas@thomas.com <- invalid email, consecutive _
+thomas@.thomas.com <- invalid domain, . is not acting as a separator
+thomas@tho..mas.com <- invalid email, consecutive .
+thomas@thomas..com <- invalid domain, . is not acting as a separator
+thomas_@thomas.com <- invalid mailbox, _ is not acting as a separator
+thomas@--thomas.com <- invalid domain, must be alphanumeric (with optional . separators)
+thomas@thomas--.com <- invalid domain, must be alphanumeric (with optional . separators)
+thomas.@[255.80.239.132] <- invalid mailbox, . is not acting as a separator
+.thomas@[255.80.239.132] <- invalid mailbox, . is not acting as a separator
+tho__mas@[255.80.239.132] <- invalid email, consecutive _
+_thomas@thomas.com <- invalid mailbox, _ is not acting as a separator
+.thomas@thomas.com <- invalid mailbox, . is not acting as a separator
+-thomas@thomas.com <- invalid mailbox, - is not acting as a separator
+thomas_@thomas.com <- invalid mailbox, _ is not acting as a separator
+thomas.@thomas.com <- invalid mailbox, . is not acting as a separator
+thomas-@thomas.com <- invalid mailbox, - is not acting as a separator
+thomas@-thomas.com <- invalid domain, must be alphanumeric (with optional . separators)
+thomas@.thomas.com <- invalid domain, . is not acting as a separator
+thomas@_thomas.com <- invalid domain, must be alphanumeric (with optional . separators)
+thomas@thomas_.com <- invalid domain, must be alphanumeric (with optional . separators)
+thomas@thomas..com <- invalid domain, . is not acting as a separator
+thomas@thomas_.com <- invalid domain, must be alphanumeric (with optional . separators)
+--thomas@thomas.com <- invalid mailbox, - is not acting as a separator
+__thomas@thomas.com <- invalid mailbox, _ is not acting as a separator
+..thomas@thomas.com <- invalid mailbox, . is not acting as a separator
+tho__mas@thomas.com <- invalid email, consecutive _
+thomas..@thomas.com <- invalid email, consecutive .
+thomas__@thomas.com <- invalid email, consecutive _
+_.-thomas@thomas.com <- invalid mailbox, _ is not acting as a separator
+-._thomas@thomas.com <- invalid mailbox, - is not acting as a separator
+._-thomas@thomas.com <- invalid mailbox, . is not acting as a separator
+_.-thomas@thomas.com <- invalid mailbox, _ is not acting as a separator
+thomas@..thomas.com <- invalid domain, . is not acting as a separator
+thomas@__thomas.com <- invalid domain, must be alphanumeric (with optional . separators)
+thomas@--thomas.com <- invalid domain, must be alphanumeric (with optional . separators)
